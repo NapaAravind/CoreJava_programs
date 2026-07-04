@@ -1,15 +1,17 @@
-node {
+pipeline {
 
-    stage('Build') {
-        echo "Building the application"
-    }
+    agent any
 
-    stage('Test') {
-        echo "Running tests"
-    }
+    stages {
 
-    stage('Deploy') {
-        echo "Deploying application"
+        stage('Hello') {
+
+            steps {
+                echo "Hello Jenkins"
+            }
+
+        }
+
     }
 
 }
