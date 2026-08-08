@@ -15,7 +15,7 @@ pipeline{
         }
 
         stage("Deploying"){
-            steps{
+            step{
                 echo "Deploying the Application"
             }
         }
